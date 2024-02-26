@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* { 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body { 
+    width: 100%; 
+    height: 100vh;
+    font-family: 'Oswald'; 
+    color: white;
+
+}
+
+.container { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #141d2e;
+}
+
+.appbox { 
+    width: 500px; 
+    height: 500px;
+   
+    display: grid; 
+    grid-template-rows: 10% 20% 70%;
+    grid-template-columns: 100%;
+    background-color: #141d2e;
+}
+
+.ab-title, .ab-search, .ab-result { 
+    width: 100%; 
+    height: 100%;
+}
+
+.ab-title, .ab-search { 
+    display: flex; 
+    align-items: center;    
+}
+
+.search-wrapper { 
+    width: 100%; 
+    height: 70%; 
+    background-color: #1e2b48;
+    border-radius: 15px;
+    display: grid; 
+    grid-template-columns: 15% 60% 25%;
+    grid-template-rows: 100%;
+}
+
+.icon, .searchbar, .searchbutton { 
+    width: 100%; 
+    height: 100%; 
+}
+
+.icon { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon span {
+    color: #0769db; 
+    font-size: 2.5rem;
+}
+
+.searchbar input{ 
+    width: 100%; 
+    height: 100%;
+    border: none; 
+    background-color: #1e2b48; 
+    color: white; 
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+}
+
+.searchbutton { 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#btn { 
+    background-color: #0179ff;
+    color: white; 
+    width: 75%;
+    border-radius: 15px;
+    border: none;
+    height: 80%;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 300ms;
+
+}
+
+#btn:hover{ 
+    background-color: #0050ab;
+}
+
+
+input:focus { 
+    outline: none;
+}
+
+.ab-title h1::after {
+    content: "by dale";
+    font-size:  1.1 rem;
+    font-weight: 400;
+
+}
+
+
+.ab-result { 
+    display: grid; 
+    grid-template-rows: 40% 30% 30%;
+    grid-template-columns: 100%;
+    background-color: #1e2b48;
+    border-radius: 15px;
+    font-family: 'Poppins';
+    opacity: 0;
+    transition: 300ms ;
+
+}
+
+.ab-result h1 {
+    font-size: 1.5rem;
+}
+.main-info { 
+    width: 100%; 
+    height: 100%; 
+    display: grid; 
+    
+    grid-template-columns: 30% 40% 30%;
+}
+
+.avatar, .profile, .joined { 
+    width: 100%; 
+    height: 100%; 
+}
+
+.avatar { 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img { 
+    width: 75px; 
+    height: 75px; 
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+
+.profile { 
+    display: grid; 
+    grid-template-rows: 70% 30%;
+    grid-template-columns: 100%;
+}
+
+
+
+.userinfo { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center
+}
+
+.userbio { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center;
+}
+
+h3 { 
+    font-family :'Poppins';
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.joined { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.followers { 
+    width: 100%; 
+    height: 100%; 
+    display: grid; 
+    grid-template-columns: 25% 75%;
+}
+
+.blank, .fbwrapper { 
+    width : 100%; 
+    height: 100%; 
+    display: flex ; 
+    justify-content: center;
+    align-items: center;
+}
+
+.followbox { 
+    border-radius: 15px;
+    width: 85%; 
+    height: 60%;
+    background-color: #141d2e; 
+
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.followbox div { 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.links { 
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.linkwrapper { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.linksmain { 
+    width: 75%; 
+    height: 80%;
+    
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.linkbox {
+    width :100%; 
+    height: 100%; 
+    display: grid; 
+    grid-template-columns: 20% 80%;
+}
+
+.linkicon, .linktext { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFinder</title>
+    <link rel = "stylesheet" href = "style.css"/> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+<div class="container">
+    <div class="appbox">
+
+
+        <!---- title bar -->
+        <div class="ab-title">
+            <h1> devfinder </h1>
+        </div>
+
+        <!---- search bar -->
+        <div class="ab-search">
+            <div class="search-wrapper">
+                <div class="icon">
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+                <div class="searchbar">
+                    <input type = "text" id = "searchbar" placeholder =  "Search GitHub username..."> 
+                </div>
+                <div class="searchbutton">
+                    <button id = "btn"> Search </button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!---- result bar -->
+        <div class="ab-result">
+            <div class="main-info">
+                <div class="avatar">
+                    <img src = "" id = "avatar"/> 
+                </div>
+
+                <div class="profile">
+                    <div class="userinfo">
+                        <h1 id = "name"> Account name </h1>
+                        <h3 id = "username" >  @username </h3>
+                    </div>
+
+                    <div class="userbio">
+                        <h3 id = "bio"> This profile has no bio </h3>
+                    </div>
+                </div>
+
+                <div class="joined">
+                    <h3 id = "joined"> Joined 25 Jan 2011 </h3>
+                </div>
+            </div>
+
+            <div class="followers">
+                <div class="blank"></div>
+                <div class="fbwrapper">
+                    <div class="followbox">
+                        <div class="repos">
+                            <h3> Repos</h3>
+                            <h1 id ="repos"> 5 </h1>
+                        </div>
+                        <div class="userfollowers">
+                            <h3> Followers </h3>
+                            <h1 id = "followers"> 3940 </h1>
+                        </div>
+                        <div class="usersfollowing">
+                            <h3> Following </h3>
+                            <h1 id =  "following"> 8 </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="links">
+                <div class="blank"></div>
+                <div class="linkwrapper">
+                    <div class="linksmain">
+                        <div class="linkbox">
+                            <div class="linkicon">
+                                <span class="material-symbols-outlined">
+location_on </span>
+                            </div>
+
+                            <div class="linktext">
+                                <h3 id ="location"> null </h3>
+                            </div>
+                        </div>
+                        <div class="linkbox">
+                            <div class="linkicon">
+                                <span class="material-symbols-outlined">
+share </span>
+                            </div>
+
+                            <div class="linktext">
+                                <h3 id = "social"> @bedaniadeyl </h3>
+                            </div>
+                        </div>
+
+
+                        <!--- end of anoither linkbox-->
+                        <div class="linkbox">
+                            <div class="linkicon">
+                                <span class="material-symbols-outlined">
+link </span>
+                            </div>
+
+                            <div class="linktext">
+                                <h3 id = "git"> github.com/bedaniadale </h3>
+                            </div>
+                        </div>
+                
+                        <div class="linkbox"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+    
+</body>
+<script src = "index.js"> </script> 
+</html>
